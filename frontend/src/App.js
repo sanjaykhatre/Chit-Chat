@@ -1,5 +1,17 @@
+import { Button } from "@chakra-ui/react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Chat from "./pages/Chat";
+
 function App() {
-  return <div className="App">chit chat with sanj</div>;
+  return (
+    <>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;

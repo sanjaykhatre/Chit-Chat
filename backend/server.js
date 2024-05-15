@@ -7,10 +7,10 @@ dotenv.config();
 app.get("/", (req, res) => {
   res.send("Chitchats");
 });
-app.get("/chat", (req, res) => {
+app.get("/api/chats", (req, res) => {
   res.send(chats);
 });
-app.get("/chat/:id", (req, res) => {
+app.get("/api/chat/:id", (req, res) => {
   res.send(chats);
 });
 const PORT = process?.env?.PORT;
